@@ -1,0 +1,135 @@
+---
+title: "Written Assignment 03"
+author: "Your Name"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+number-sections: true
+number-depth: 3
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    html-math-method: katex
+    embed-resources: true
+# bibliography: dasc-6000.bib 
+# csl: ieee-with-url.csl
+# linkcolor: red
+# urlcolor: blue
+# link-citations: yes
+# header-includes:
+#   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+# Assignment Goal {.unnumbered}
+
+The goal of this assignment is to demonstrate your understanding of exploratory data analysis. You may use any programming language of your choice. **R** and **Python** are the two popular languages for the **programmatic** data exploration.
+
+# Assignment Specification {.unnumbered}
+
+The first step is to identify a **relevant** open-source dataset. The dataset should have at least 500 instances and contain a mix of at least ten **continuous** and **categorical** variables. The next step is to perform various exploratory data analysis tasks discussed in the class. The final step is to summarize your findings. You may use Quarto/RMarkdown or Jupyter/Python to respond to this assignment. Use this document as a template to prepare your response.
+
+Some open-source data sources for this assignment are the following. This list is not exhaustive and you are not required to select a datset from this list. If you come across other repositories of open source datasets, please post links on MS Teams for the benefit of other students.
+
+1. Integrated Postsecondary Education Data System (IPEDS) is a system of 12 interrelated survey components conducted annually that gathers data from every college, university, and technical and vocational institution that participates in the federal student financial aid programs. [IPEDS Website](https://nces.ed.gov/ipeds/)
+
+
+1. U.S. Securities and Exchange Commission (SEC) [Financial Statement Data Sets](https://www.sec.gov/dera/data/financial-statement-data-sets)
+
+
+1. [United Nations (UN) Datasets](https://data.un.org/)
+
+
+1. [World Bank Open Data](https://data.worldbank.org/)
+
+
+1. [The Library of Congress Datasets](https://guides.loc.gov/datasets/repositories)
+
+
+1. [NASDAQ Historical Datasets](https://www.nasdaq.com/market-activity/quotes/historical)
+
+
+1. [The World Factbook](https://www.cia.gov/the-world-factbook/) and [Guide to Country Comparisons](https://www.cia.gov/the-world-factbook/references/guide-to-country-comparisons/)
+
+
+# The Data Quality Report
+
+Document the data quality report in two separate tables, one for the continuous features and another for the categorical features. Use the table format discussed in the class. 
+
+
+## Continuous Features
+
+
+
+## Categorical Feature
+
+
+
+
+# Histograms of Continuous Features
+
+Create a **histogram** for each continuous feature. What probability distributions the histograms reveal? For example, uniform, normal (unimodal), unimodal (skewed right), unimodal (skewed left), exponential, and multimodal.
+
+
+# Identification of Data Quality Issues
+
+Consider the missing values, irregular cardinality problems, and outliers. Summarize the **data quality issues** using a three-column table. The first column is the feature name, the second column is the associated data quality issue, and the third column describes potential handling strategies.
+
+
+# Scatterplot Matrix
+
+Construct the **scatterplot matrix** for the continuous features and comment on what you observed.
+
+
+# Visualizing Pairs of Categorical Features
+
+Use multiple **barplot visualizations**.
+
+
+# Visualizing Relationship Between a Catergorical and Continuous Feature
+
+For a subset of the categorical and continuous features, perform **stacked barplot visualizations**. Comment on what you observed.
+
+# Boxplot Visualizations
+
+For a subset of the categorical and continuous features, perform **boxplot visualizations**. Comment on what you observed.
+
+# Covariance Matrix
+
+For the continuous features, construct the **covariance matrix**. Comment on what you observed.
+
+# Correlation Matrix
+
+For the continuous features, construct the **correlation matrix**. Comment on what you observed.
+
+
+# Range Normalization
+
+List the continuous features that require **range normalization**. What is the rationale for your selection? Perform the range normalization and show the values before and after the normalization.
+
+
+# Binning
+
+Do you see the need for converting a subset of the continuous features into categorical features? Select two such continuous features and convert the first into a categorical feature using the **equal-width binning*** and the second using **equal-frequency binning**. Show the feature values after the equal-width and equal-frequency binning.
+
+
+# Undersampling
+
+Do you see a need for undersampling? **Undersampling** is used to reduce the instances from the majority class so that the final dataset is balanced. For example, a binary classification problem has a target/outcome variable that takes two values, say, *approved* and *denied*. In the dataset, if 70% of the instances have the *approved* value for the target variable, the dataset is *imbalanced*. Ideally, the dataset should have approximately equal number of instances for each the values the target variable takes. [This](https://predictivehacks.com/undersampling-by-groups-in-r/) article illustrates the undersampling.
+
+
+# Oversampling
+
+**Oversampling** arises when we have too few instances from a class (called the minority class) relative to other classes. To boost the participation of the minority class in the (training) dataset, more observations from the minority class are generated usually by replicating the samples from the minority class.
+
+In your dataset, do you see the need for oversampling? If so, which features require oversampling?
+
+
+# Summary
+
+Summarize the findings you have discovered through the exploratory data analysis. The summary should about a page and should serve as an executive report for non-technical people.
+
